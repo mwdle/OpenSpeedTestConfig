@@ -14,10 +14,10 @@ services:
       - ${DOCKER_VOLUMES}/Speedtest/config:/config
     deploy:
       resources:
-        limits: 
-          cpus: '0.20'
+        limits:
+          cpus: "0.20"
           memory: 80M
-  
+
 networks:
   Speedtest:
     name: Speedtest
