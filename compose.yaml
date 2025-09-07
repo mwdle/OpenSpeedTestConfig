@@ -1,3 +1,4 @@
+name: Speedtest
 services:
   Speedtest:
     image: lscr.io/linuxserver/librespeed:latest
