@@ -18,6 +18,8 @@ services:
         limits:
           cpus: "0.20"
           memory: 80M
+    ports:
+      - 8081:80
 
 networks:
   Speedtest:
