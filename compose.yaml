@@ -7,10 +7,6 @@ services:
     hostname: speedtest
     networks:
       - Speedtest
-    environment:
-      - TZ=America/Denver
-    volumes:
-      - ${DOCKER_VOLUMES}/Speedtest/config:/config
     # deploy:
     #   resources:
     #     limits:
