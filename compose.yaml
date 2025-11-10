@@ -1,17 +1,22 @@
 name: Speedtest
 services:
   Speedtest:
-    image: openspeedtest/latest
+    image: ghcr.io/librespeed/speedtest:latest
     container_name: Speedtest
     restart: unless-stopped
     hostname: speedtest
     networks:
       - Speedtest
-    # deploy:
-    #   resources:
-    #     limits:
-    #       cpus: "0.20"
-    #       memory: 80M
+    environment:
+      - MODE: standalone
+      - TELEMETRY: "false"
+    volumes:
+      - ${DOCKER_VOLUMES}/Speedtest/config:/config
+    deploy:
+      resources:
+        limits:
+          cpus: "0.20"
+          memory: 80M
 
 networks:
   Speedtest:

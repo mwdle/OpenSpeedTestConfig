@@ -1,10 +1,10 @@
-# OpenSpeedTest Docker Compose Configuration
+# LibreSpeed Docker Compose Configuration
 
-A sample Docker Compose file for OpenSpeedTest.
+A sample Docker Compose file for LibreSpeed.
 
 ## Table of Contents
 
-- [Description](#openspeedtest-docker-compose-configuration)
+- [Description](#librespeed-docker-compose-configuration)
 - [Getting Started](#getting-started)
 - [License](#license)
 - [Disclaimer](#disclaimer)
@@ -14,7 +14,7 @@ A sample Docker Compose file for OpenSpeedTest.
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/mwdle/OpenSpeedTestConfig.git
+   git clone https://github.com/mwdle/LibreSpeedConfig.git
    ```
 
 2. Create a folder on your system for Docker bind mounts / storing container files. The folder should have the following structure:
