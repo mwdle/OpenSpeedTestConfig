@@ -1,7 +1,7 @@
 name: Speedtest
 services:
   Speedtest:
-    image: ghcr.io/librespeed/speedtest:latest
+    image: ghcr.io/librespeed/speedtest:latest-alpine
     container_name: Speedtest
     restart: unless-stopped
     hostname: speedtest
@@ -9,7 +9,6 @@ services:
       - Speedtest
     environment:
       - MODE: standalone
-      - TELEMETRY: "false"
     volumes:
       - ${DOCKER_VOLUMES}/Speedtest/config:/config
     deploy:
